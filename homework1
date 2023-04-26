@@ -1,3 +1,10 @@
 currentNumber = int(input("Введите трехзначное число: "))
 sum = (currentNumber // 100) + ((currentNumber % 100) // 10) + (currentNumber % 10)
 print(sum)
+
+sum = int(input("Введите общее кол-во журавликов, которое сделали ребята(кратное 6): "))
+if sum % 6 == 0:
+    firstPerson = sum // 6
+    secondPerson = (sum // 6) * 4
+    thirdPerson = sum // 6
+print(firstPerson, secondPerson, thirdPerson)
