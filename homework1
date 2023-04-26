@@ -8,3 +8,15 @@ if sum % 6 == 0:
     secondPerson = (sum // 6) * 4
     thirdPerson = sum // 6
 print(firstPerson, secondPerson, thirdPerson)
+
+ticketNum = input("Введите номер билета: ")
+if len(ticketNum) != 6:
+    print("Некорректный номер билета")
+else:
+    halfSum1 = sum(int(ticket) for ticket in ticketNum[:3])
+    halfSum2 = sum(int(ticket) for ticket in ticketNum[3:])
+    # print(halfSum1, halfSum2)
+    if halfSum1 == halfSum2:
+        print("Билет счастливый!")
+    else:
+        print("Билет не счастливый")
