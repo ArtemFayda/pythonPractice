@@ -14,16 +14,22 @@
 # else:
 #     print(face)
 
-print("Загадайте два числа от 0 до 1000")
-sum = int(input("Введите сумму этих двух чисел: "))
-product = int(input("Введите произведение этих двух чисел: "))
-solution = False
-while solution != True:
-    for i in range(1, sum):
-        firstNum = sum - i
-        if firstNum * i == product:
-            print(firstNum, i)
-            solution = True
+# print("Загадайте два числа от 0 до 1000")
+# sum = int(input("Введите сумму этих двух чисел: "))
+# product = int(input("Введите произведение этих двух чисел: "))
+# solution = False
+# while solution != True:
+#     for i in range(1, sum):
+#         firstNum = sum - i
+#         if firstNum * i == product:
+#             print(firstNum, i)
+#             solution = True
+
+n = int(input())
+i = 0
+while 2 ** i <= n:
+    print(2 ** i)
+    i += 1
 
 
 
